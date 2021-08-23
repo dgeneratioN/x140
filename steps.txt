@@ -1,0 +1,29 @@
+1. Ajustes nos scripts
+     Retirar o setFields.
+2.Definir o teste de traçador de pulso;
+     Pulso entrada, um pequeno intervalo de tempo com uma concentração fixa (C = 1, t = 10s);
+     Definir condição de contorno entrada traçador;
+    Esperado:
+           Gráfico concentração versus tempo (Dentro da cavidade [ControlDict: tracerVolAverage] | Saída do canal [a definir ControlDict: l.188 - 211 topoSetDict: definir a face)
+           Gráfico concentração versus tempo por partes
+                  - Dividir em três partes (Baixo <0.33 | 0.33 < Meio < 0.66 | Cima > 0.66)
+                  - Três médias volumétricas para cada parte [ControlDict: tracerVolAverage]
+
+3.Decaimento de traçador na vegetação;
+     Taxa fixa de retirada de traçador (Coded source | Semi-implicit source)
+      
+  injectionRateSuSp
+    {
+        tracer      (-0.01 0);
+        variable    (explicit implicit)
+    }
+
+      Esperado:
+           Gráfico concentração versus tempo (Dentro da cavidade [ControlDict: tracerVolAverage] | Saída do canal [a definir ControlDict: l.188 - 211 topoSetDict: definir a face)
+           Gráfico concentração versus tempo por partes
+                  - Dividir em três partes (Baixo <0.33 | 0.33 < Meio < 0.66 | Cima > 0.66)
+                  - Três médias volumétricas para cada parte [ControlDict: tracerVolAverage]
+
+
+taxa tratamento decaimento escalar poluente
+0.999734
