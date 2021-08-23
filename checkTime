@@ -1,0 +1,4 @@
+#!/bin/sh
+
+#Check current sim time
+tail -n100 log/pimpleFoam.log | grep -e ^Time | tail -n1

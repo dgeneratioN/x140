@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 mpirun pimpleFoam -parallel > log/pimpleFoam.log
 

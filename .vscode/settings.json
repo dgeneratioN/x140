@@ -6,6 +6,7 @@
     "fvSolution": "OpenFOAM",
     "**/constant/g": "OpenFOAM",
     "**/0/*": "OpenFOAM",
-    "fvoptions": "OpenFOAM"
+    "fvoptions": "OpenFOAM",
+    "codeStreamTemplate.C": "cpp"
   }
 }

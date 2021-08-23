@@ -1,6 +1,8 @@
-#!/bin/bash
+#!/bin/sh
 
-## Initialization
+## Decompose and calculate initial speeds
+
+sed -i "/numberOfSubdomains/c\\numberOfSubdomains    $(($CORES));" system/decomposeParDict
 rm -r processor*/
 decomposePar > log/decomposePar.log
 mpirun potentialFoam -parallel > log/potentialFoam.log
