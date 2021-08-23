@@ -1,0 +1,6 @@
+#!/bin/bash
+
+## Initialization
+rm -r processor*/
+decomposePar > log/decomposePar.log
+mpirun potentialFoam -parallel > log/potentialFoam.log
