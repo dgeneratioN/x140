@@ -1,0 +1,3 @@
+#!/bin/bash
+
+while :; do tail -n100 log/pimpleFoam.log | grep -e ^Time | tail -n1; sleep 5; done
