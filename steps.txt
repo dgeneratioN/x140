@@ -36,4 +36,7 @@ explicit -1e-6 implicit 0
 
 Resultado: diferença de 0,027% de massa entre os passos.
 
+explicit 0 implicit 0.10
+concentração de traçador apenas aumentou.
+
 
