@@ -1,0 +1,5 @@
+#!/bin/bash
+
+./mesh
+./decompose
+./run
