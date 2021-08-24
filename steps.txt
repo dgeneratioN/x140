@@ -39,7 +39,7 @@ Resultado: diferença de 0,027% de massa entre os passos.
 explicit 0 implicit 0.10
 concentração de traçador apenas aumentou.
 
-explicit 0 implicit 1e-6
+explicit 0 implicit 1e-6 (adjustableTimeStep)
 
 0: 1,000000
 1: 1,000260
@@ -47,3 +47,13 @@ explicit 0 implicit 1e-6
 3: 1,000800
 4: 1,001070
 5: 1,001330
+
+explicit 0 implicit 1e-6 (fixedTimeStep)
+
+0: 1,000000
+1: 1,000270
+2: 1,000530
+3: 1,000800
+4: 1,001070
+5: 1,001330
+
