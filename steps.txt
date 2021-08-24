@@ -26,4 +26,14 @@
 
 
 taxa tratamento decaimento escalar poluente
-0.999734
+explicit -1e-6 implicit 0
+0: 1,000000
+1: 0,999736
+2: 0,999472
+3: 0,999204
+4: 0,998937
+5: 0,998671
+
+Resultado: diferença de 0,027% de massa entre os passos.
+
+

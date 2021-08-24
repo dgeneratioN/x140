@@ -20,7 +20,7 @@ FoamFile
 		startFrom						startTime;
 		startTime						0;
 		stopAt							endTime;
-		endTime							1000;
+		endTime							5;
 		deltaT							1.0E-3;
 		writeControl				adjustableRunTime;
 		writeInterval				1;
@@ -174,7 +174,7 @@ functions
 					cellZone embayment;
 					volumeMode absolute; // absolute;
 					injectionRateSuSp {
-						tracer (-1e-6 0);
+						tracer (0 0.1);
 						//tracer (0 0.5);
 					}
 				}
