@@ -20,8 +20,8 @@ FoamFile
 		startFrom						startTime;
 		startTime						0;
 		stopAt							endTime;
-		endTime							5;
-		deltaT							1.0E-3;
+		endTime							100;
+		deltaT							1.0;
 		writeControl				adjustableRunTime;
 		writeInterval				1;
 		purgeWrite					0;
@@ -32,7 +32,7 @@ FoamFile
 		timePrecision				6;
 		graphFormat					raw;
 		runTimeModifiable		yes;
-		adjustTimeStep			true;
+		adjustTimeStep			false;
 		maxCo								0.90;
 		maxDeltaT						0.05;
 
@@ -174,7 +174,7 @@ functions
 					cellZone embayment;
 					volumeMode absolute; // absolute;
 					injectionRateSuSp {
-						tracer (0 0.1);
+						tracer (0 0.99);
 						//tracer (0 0.5);
 					}
 				}

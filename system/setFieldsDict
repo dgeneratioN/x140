@@ -21,13 +21,24 @@ defaultFieldValues
 
 regions
 (
-    // Setting values inside a box
+    
+    // embayment
     boxToCell
     {
         box     (0.25 0.30 0) (0.50 0.45 0.10);
         fieldValues
         (
             volScalarFieldValue tracer 1
+        );
+    }
+
+    // resto do corpo
+    boxToCell
+    {
+        box     (0 0 0) (1.25 0.30 0.10);
+        fieldValues
+        (
+            volScalarFieldValue tracer 0.25
         );
     }
 );
